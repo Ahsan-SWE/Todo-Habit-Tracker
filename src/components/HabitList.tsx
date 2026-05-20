@@ -1,3 +1,6 @@
+import { Button } from "./Button";
+import { startOfWeek } from "date-fns"
+
 export function HabitList() {
 
     const habits = [
@@ -29,20 +32,33 @@ return (
 )
 }
 
-type HabitItemProps = {
-  habit: { id: string; name: string }
-}
+
 
 function HabitItem({ habit }: HabitItemProps) {
+
+
+
+    
   return (
     <div className="rounded-xl bg-zinc-800 p-4 flex flex-col gap-3">
       <div className="flex items-center justify-between">
-        <span className="font-medium">{habit.name}</span>
-        <span className="text-sm text-amber-400">🔥 3</span>
+        <div className="flex gap-3 items-center">
+          <span className="font-medium">{habit.name}</span>
+          <span className="text-sm text-amber-400">🔥</span>
+        </div>
+        <Button>Delete</Button>
       </div>
+
+<div className="flex gap-1.5">
+
+</div>
+
+
+
     </div>
-  )
+  );
 }
+
 
 
 
