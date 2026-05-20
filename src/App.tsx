@@ -1,7 +1,13 @@
+
+import { HabitForm } from "./components/HabitForm";
+import Header from "./components/Header";
+
+
 export default function App() {
   return (
-    <div className="App">
+    <div className="max-w-2xl mx-auto p-4 flex flex-col gap-4">
       <Header />
+      <HabitForm />
     </div>
   );
 }
@@ -9,17 +15,44 @@ export default function App() {
 
 
 
-function Header() {
-  return (
-    <header className="flex items-center justify-between">
-      <div className="flex flex-col gap-1">
-        <h1 className="text-3xl">Habit Tracker</h1>
-        <span>1/1 Done Today</span>
-      </div>
-      <div></div>
-    </header>
-  )
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
