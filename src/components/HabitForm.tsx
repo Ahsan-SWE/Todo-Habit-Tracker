@@ -1,9 +1,15 @@
 import { Button } from "./Button";
 import { useState } from "react";
 
+type HabitFormProps = {
+  addHabit: (name: string) => void;
+}
 
-export function HabitForm() {
+
+
+export function HabitForm({addHabit}: HabitFormProps) {
   
+
     
 const [name, setName] = useState("");
 
@@ -13,6 +19,7 @@ const [name, setName] = useState("");
     if(name.trim()) {
      
       setName("");
+      addHabit(name)
     }
   }
 
