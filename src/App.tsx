@@ -3,7 +3,7 @@ import { HabitForm } from "./components/HabitForm";
 import { HabitList } from "./components/HabitList";
 import Header from "./components/Header";
 
-import { HabitProvider } from "./components/context/HabitProvider";
+import { HabitProvider } from "./context/HabitProvider";
 
 export default function App() {
 

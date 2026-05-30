@@ -19,7 +19,7 @@ const [habits, setHabits] = useState<Habit[]>([])
 
   function addHabit(name: string) {
 
-    setHabits(curr => [...curr, { id: crypto.randomUUID(), name, completions: [new Date()] }])
+    setHabits(curr => [...curr, { id: crypto.randomUUID(), name, completions: [] }])
   }
 
 

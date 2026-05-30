@@ -1,6 +1,7 @@
 import { Button } from "./Button";
 import { useState } from "react";
-import { useHabits } from "./context/useHabits";
+import type React from "react";
+import { useHabits } from "../context/useHabits";
 
 
 
@@ -9,7 +10,7 @@ export function HabitForm() {
 const [name, setName] = useState("");
 const { addHabit } = useHabits();
 
-  function handleSubmit(e: SubmitEvent) {
+function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if(name.trim()) {
      
